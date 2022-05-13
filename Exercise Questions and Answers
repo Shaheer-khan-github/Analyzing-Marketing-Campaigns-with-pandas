@@ -1,1 +1,34 @@
-## Chapter 1: Pandas
+-------------------------------------------------------Chapter 1: Pandas-----------------------------------------------------------------
+
+i. Importing the dataset
+Throughout this course, you will use pandas to manipulate data and calculate summary statistics!
+
+In this exercise, you will begin by importing pandas and the marketing dataset into your environment.
+Import pandas into your environment with the alias pd.
+Import the 'marketing.csv' dataset.
+
+# Import pandas into the environment
+import pandas as pd
+
+# Import marketing.csv 
+marketing = pd.read_csv('marketing.csv')
+
+________________________________________
+
+ii. Examining the data
+Now that you've imported the data, you will examine it to ensure it is valid. While it may be tempting to dive into analysis, by validating your dataset immediately, you ensure that the insights you derive are both true and actionable. Ensuring the validity of your dataset should always be the first step you take when beginning analysis on a new dataset.
+The marketing DataFrame is available in your workspace.
+Print the first five rows of the marketing DataFrame.
+
+# Print the first five rows of the DataFrame
+print(marketing.head())
+
+Print the summary statistics of all columns in the marketing DataFrame.
+# Print the statistics of all columns
+print(marketing.describe())
+
+Print the number of non-missing values and the data type of all columns in marketing.
+# Check column data types and non-missing values
+print(marketing.info())
+________________________________________
+________________________________________
